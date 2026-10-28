@@ -1,0 +1,125 @@
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~ (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/SANTOSH/.git/
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~ (master)
+$ git --version
+git version 2.55.0.windows.5
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~ (master)
+$ mkdir Santosh2
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~ (master)
+$ cd Santosh
+bash: cd: Santosh: No such file or directory
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~ (master)
+$ cd Santosh2
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh2 (master)
+$ git init
+Initialized empty Git repository in C:/Users/SANTOSH/Santosh2/.git/
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh2 (master)
+$ git config --global user.name "Santosh"
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh2 (master)
+$ git config --global user.email "santoshkollanatti75@gmail.com"
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh2 (master)
+$ echo "This is my Second Program" >Santu2.txt
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh2 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Santu2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh2 (master)
+$ git add Santu2.txt
+warning: in the working copy of 'Santu2.txt', LF will be replaced by CRLF the next time Git touches it
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh2 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Santu2.txt
+
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh2 (master)
+$ git commit -m "Initial Second File Is Ready"
+[master (root-commit) fba8a38] Initial Second File Is Ready
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Santu2.txt
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh2 (master)
+$ git branch
+* master
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh2 (master)
+$ git branch Santosh2
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh2 (master)
+$ git branch
+  Santosh2
+* master
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh2 (master)
+$ git checkout Santosh2
+Switched to branch 'Santosh2'
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh2 (Santosh2)
+$ git branch
+* Santosh2
+  master
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh2 (Santosh2)
+$ git commit -m "Branch is Created"
+On branch Santosh2
+nothing to commit, working tree clean
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh2 (Santosh2)
+$ git status
+On branch Santosh2
+nothing to commit, working tree clean
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh2 (Santosh2)
+$ git romote add origin https://github.com/Santoshkollanatti/Santosh_Git2.git
+git: 'romote' is not a git command. See 'git --help'.
+
+The most similar command is
+        remote
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh2 (Santosh2)
+$ git remote add origin https://github.com/Santoshkollanatti/Santosh_Git2.git
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh2 (Santosh2)
+$ git remote -v
+origin  https://github.com/Santoshkollanatti/Santosh_Git2.git (fetch)
+origin  https://github.com/Santoshkollanatti/Santosh_Git2.git (push)
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh2 (Santosh2)
+$ git push origin Santosh2
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 258 bytes | 258.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Santoshkollanatti/Santosh_Git2.git
+ * [new branch]      Santosh2 -> Santosh2
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh2 (Santosh2)
+$ ^C
+
+
+SANTOSH@DESKTOP-MIHM1B5 MINGW64 ~/Santosh2 (Santosh2)
+$
